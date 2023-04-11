@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Not Only Electronics</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Not Only Electronics </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">O mnie</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="game.html">Gierka</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/art3.jpg')" alt="https://us.123rf.com/450wm/ioat/ioat2206/ioat220600006/187248213-lekki-tech-efekt-fali-d%C5%BAwi%C4%99kowej-streszczenie-t%C5%82o.jpg?ver=6">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Skaner SDR z tunera DVB-T</h1>
+                            <h2 class="subheading"> Skaner czestotliwosci z wykorzystaniem taniego tunera DVB-T USB.</h2>
+                            <span class="meta">
+                                Wrzucony przez
+                                <a href="index.html">Marcin</a>
+                                22.03.2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>
+                            Wraz z pojawieniem się kilka lat temu w polsce telewizji cyfrowej, popularne stały się rozwiazania takie jak tunery DVB-T podłączane do komputera za pomocą interfacu USB. W urzadzeniach tych potencjał dostrzegli radioamataorzy, którzy zaczeli używać te urzadzenia jako skanery czestotliwosci.
+
+                        </p>
+                        <img class="img-fluid" src="assets/img/sdr.jpg" alt="Dekodery DVB-T jako SDR  " />
+                        <span class="caption text-muted">Dekodery DVB-T jako SDR</span>
+                        <p>
+                           Aby dekoder zadziałał jako skaner, musi być wyposażony w chip od firmy Realtek. Należy wtedy zainstalować odpowiednie oprogramowanie np. SDR Sharp lub HD SDR i dokoanć podmiany sterownika w systemie Windows, za pomocą pokazanego poniżej programu.
+                        </p>
+                        
+
+                        <img class="img-fluid" src="assets/img/zadig.jpg" alt=" zadig" />
+                        <span class="caption text-muted">Pinout transmitera  </span>
+
+                        <p>
+                          Następnie po podmianie sterownika, można uruchomić własciwy program skanera częstotliwosci i wybrać z listy nasze urzadzenie z którego bedziemy monitorować sygnał. Ja korzystam, z SDRsharp.
+                        </p>
+                        <img class="img-fluid" src="assets/img/konf.jpg" alt="wybrane urzadzenie" style="margin-left: 30%;"/>
+                        <span class="caption text-muted">wybrane urządzenie </span>
+                        
+                        <p>
+                            Krokiem kolejnym jest podpięcie antenki, która odbierze sygnał z eteru który chcemy analizować. Do zastosowań domowych, wystarczy taka dołączona do dekodera, gdy chcemy czegoś większego, wystarczy wyposażyć antenę w odpowiednie złącze i podłączyć do naszego SDR.
+                        </p>
+
+                        <img class="img-fluid" src="assets/img/antene.jpg" alt="antena" />
+                        <span class="caption text-muted">Płytka Arduino nano </span>
+                        
+                        <p>
+                            Po podłaczeniu anteny, układ powinien odbierać sygnał i na ekranie powinny być widoczne tak zwane wodospady czyli widmo naszego sygnału w postacji graficznej. Układ daje nam możiwośc odbioru na 2,5 GHz  
+
+                        </p>
+                        <img class="img-fluid" src="assets/img/wodospad.jpg" alt="wodospady" />
+                        <span class="caption text-muted">Wodospady</span>
+                        <p>
+                            Układ umożliwia również demodulacje sygnału i obsługuje najbardziej popularne typy modulacji takie jak AM FM oraz wstęgi, dzięki czemu możemy słuchać np. stacji radiowych lub też komunikacji lotniczej. Takie małe urzadzenie daje nam ogromne możliwosci.
+
+                        </p>
+                        <img class="img-fluid" src="assets/img/radio.jpg" alt="Odsłuch radia" />
+                        <span class="caption text-muted">Odsłuch radia </span>
+
+                        <p>
+                            Urzadzenie to mimo że nie jest profesjonalene to daje duże możliwosci które pewnoscią doceni je osoba pasjonująca się elektroniką a szczególnie wysokimi czestotliwosciami. Taki skaner pozwoli nam zobaczyć czy np. nasz pilot od bramy działa, czy też sprawdzić czy nasz nadajnik o którym pisąłem <a href="post1.html">tutaj</a>  działa poprawnie i nie generuje tak zwanych harmonicznych.
+
+                        </p>
+
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://mail.google.com/mail/u/2/#inbox" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-google fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/marcin.pater.104" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/elektryk763" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Marcin Pater 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

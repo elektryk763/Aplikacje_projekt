@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Not Only Electronics</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Not Only Electronics </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">O mnie</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="game.html">Gierka</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/post_transmit.jpg')" alt="https://www.alfatronik.com.pl/info/nadajniki-radiowe-jak-mozesz-je-wykorzystac/">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Nadajnik z modulacją częstotliwosci</h1>
+                            <h2 class="subheading">Łatwa w wykonaiau oraz uruchomienu konstrukcja oparta o gotowy modół transmitera</h2>
+                            <span class="meta">
+                                Wrzucony przez
+                                <a href="index.html">Marcin</a>
+                                22.03.2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>
+                            Na wstępie muszę poinformować iż autor nie ponosi odpowiedzialnosci za budowę oraz używanie tego typu konstrukcji. W Polsce zabronione jest nadawanie za pomocą samodzielnie skonstruowanych urzadzeń. Dopuszcza się jedynie testowanie sprzetu za pomocą sztucznego obciążenia. Nie dopuszczalne jest urzywanie urzadzeń z antenami!!!!
+
+                        </p>
+                        <p>
+                            Jak zacząć budować urzadzenie? Potrzebujemy gotowy transmiter samochodowy lub jakiś oparty o chip QN8027 który to umożliwia emitowanie sygnału wzbogaconego w koder RDS oraz nadawanie w szerokim paśmie 88-108MHz.
+                        </p>
+                        <img class="img-fluid" src="assets/img/qn8027circuit.jpeg" alt="https://karusisemus.files.wordpress.com/2019/08/09-model-c.png" />
+                        <span class="caption text-muted">Modół nadajnika </span>
+                        <p>
+                            Wyjscie antenowe układu podłączany do chipu, następnie do układu MSA 11-05, który to jest wzmacniaczem szerokopasmowym i umożliwia podniesienie mocy do poziomu, który umożliwi wysterowanie tranzystora w końcówce mocy.
+                        </p>
+                        <img class="img-fluid" src="assets/img/msa.jpg" alt="https://i.ebayimg.com/images/g/pq8AAOSwVCJh7Dx0/s-l1600.jpg" />
+                        <span class="caption text-muted">Układ wzmacjiacza MSA11-05</span>
+
+                        
+                        <p>
+                            Montujemy wszystko w całość, końcówka mocy to tranzystor QN8027 który umożiwi wygenerowanie około 1W mocy na wyjsciu. Należy pamiętać o wykoaniu filtórw, aby wyciąć częstotliwosci harmoniczne, pozwoli to na bezproblemową prace układu oraz niegenerowanie zakłuceń.
+                        </p>
+
+                        <img class="img-fluid" src="assets/img/nadajnik.jpg" alt="nadajnik" />
+                        <span class="caption text-muted">Nadajnik w obudowie </span>
+                        
+                        <p>
+                            Po zmontowaniu wszystkiego, mozemy pokusić się o uruchomienie układu, do tego potrzebujemy klika rzeczy a mianowicie: SWR miarki a także sztucznego obciązenia do strojenia końcówki mocy. Nie należy uruchamiać układu bez obciązenia 50 Ohm, gdyż grozi to uszkodzeniem tranzystora w końcówce mocy. 
+
+                        </p>
+                        <img class="img-fluid" src="assets/img/SWR.jpg" alt="swr_ miarka" />
+                        <span class="caption text-muted">Miernik SWR oraz PWR </span>
+                        <p>
+                            Sztuczne obciażenie wykonane jest z 20 rezystorów o mocy 0,25W oraz oporze 1k Ohm co daje nam 4W oraz rezystancjhe wypadkową włąsnie 50 Ohm.  
+                        </p>
+                        
+
+                        <img class="img-fluid" src="assets/img/fantom.jpg" alt="Sztuczne_obciazenia" />
+                        <span class="caption text-muted">Sztuczne obciążenie 4W  </span>
+                        <h2 class="section-heading">Uruchomaienie nadajnika</h2>
+                        <p>
+                            Gdy wszystko jest podłączone, możemy podać napięcie zasilania. Należałoby obserwować prąd płynący w obwodach aby nigdzie nie było zwarcia, w przypadku stwierdzenia takowego należy wyłączyć ukłąd i ponownie przeanalizowac połączenia.
+                            
+                        </p>
+
+                        <p>
+                            Układ stroimy na maksymalny wychył SWR miarki ustawianej na pomiar mocy.
+                        </p>
+                        <blockquote class="blockquote">
+                            Proces strojenia jest żmudny i wymaga wielu prób, aby uzyskać porzadany efekt. Strojenie każdego bloku należy powtórzyć kilkukrotnie, ponieważ układy oddziałują na siebie. Poprawne działąnie urzadzenia jest nagrodą za cierpliwość przy procesie budowy oraz strojenia nadajnika.
+                        </blockquote>
+
+                        <img class="img-fluid" src="assets/img/gotowy_tx.jpg" alt="Gotowy_nadajnik" />
+                        <span class="caption text-muted">Gotowy nadajnik w obudowie </span>
+
+
+                        <h2 class="section-heading">Bonus </h2>
+
+                        <p>
+                            Jeżeli potrzeba większej mocy, to można wykorzystać tranzystor KT907A
+                            i wykonać na nim stopień mocy, który bedzie podłączany do naszego nadajnika, Nadajnik ten bedzie pracował jako driver. 
+                        </p>
+
+
+                        <p>
+                            Układ ten należy zasilać z napięcia 24V. Moc, jaka możliwa jest do uzyskania na wyjsciu to 12W. Strojenie układu jest równie żmudne jak ustwaienie samego nadajnika i przeprowadza się je identycznie. 
+                        </p>
+
+                        <img class="img-fluid" src="assets/img/wzmacniacz.jpg" alt="wzmaczniacz 12W" />
+
+                        <span class="caption text-muted">Wzmacniacz 12W</span>
+                        <p>
+                            Układy pokazane w artykule są tylko w celech edukacyjnych i autor nie bierze odpowiedzialnosci za próby naśladowania oraz nie namawia do jego konstruowania.
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://mail.google.com/mail/u/2/#inbox" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-google fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/marcin.pater.104" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/elektryk763" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Marcin Pater 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

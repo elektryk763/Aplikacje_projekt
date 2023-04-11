@@ -1,0 +1,339 @@
+body
+{
+	min-width:1000px;
+	background-color: rgb(78, 77, 77);
+}
+#mainNav
+{
+    background-color: rgb(65, 57, 57);
+}
+#giera
+{
+    margin-top: 10%;
+}
+.przeciwnicy
+{
+	margin-top:-100px;
+	margin-left:20px;
+}
+.wynik
+{
+	font-size:50px;
+	font-family:Arial;
+	text-align:center;
+}
+#podpis
+{
+	height:10px;
+}
+.rzeczy
+{
+	margin-top:-40px;
+	margin-left:10px;
+	width:80px;
+	height:80px;
+}
+.przyciski
+{
+	width:80px;
+	height:80px;
+	font-size:20px;
+	background-color:gray;
+    margin-top: 20%;
+	color:white;
+	border: 2px solid black;
+}
+.przyciski1
+{
+	width:88px;
+	height:80px;
+	font-size:20px;
+	background-color:gray;
+	color:white;
+	border: 2px solid black;
+}
+#walcz
+{
+	float: left;
+    margin-top: -15%;
+    margin-left: 85%;
+}
+#wyjdz
+{
+    margin-right: 451px;
+    float: left;
+    margin-top: 73%;
+}
+.brak
+{
+	border:0;
+	position:relative;
+	margin-left:-300px;
+}
+td
+{
+	height:80px;
+	width:100px;
+	border:3px solid black;
+	padding:0;
+	margin:0;
+}
+#livee
+{
+    margin-left: 10%;
+}
+#tabela
+{
+    margin-left: -220%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+table
+{
+	border-collapse: collapse;
+		padding:0;
+	margin:0;
+}
+#pierwszy_przec
+{
+	height:220px;
+}
+#Bold
+{
+	height:480px;
+    background-repeat: no-repeat;
+}
+img
+{
+	position:absolute;
+    height:180px;
+    width: 150px;
+}
+.obrazki
+{
+	padding:0;
+	margin:0;
+	width:615px;
+}
+#walka
+{
+	margin-left:1100px;
+}
+
+#container
+{
+    margin-left:8%;
+    margin-top:820px;
+	float:left;
+}
+#blok
+{
+    position: absolute;
+    margin-left:24px;
+    margin-top:-64px;
+}
+#blok1
+{
+    position: absolute;
+    margin-left:130px;
+}
+#blok2
+{
+    position: absolute;
+    margin-top:-126px;
+    margin-left:129px;
+}
+#blok3
+{
+    position: absolute;
+    margin-top:-65px;
+    margin-left:236px;
+}
+#blok4
+{
+    position: absolute;
+    margin-top:-192px;
+    margin-left:24px;
+}
+#blok5
+{
+    position: absolute;
+    margin-top:-191px;
+    margin-left:236px;
+}
+#blok6
+{
+    position: absolute;
+    margin-top:-253px;
+    margin-left:130px;
+}
+#blok7
+{
+    position: absolute;
+    margin-top:-318px;
+    margin-left:24px;
+}
+#blok8
+{
+    position: absolute;
+    margin-top:-317px;
+    margin-left:236px;
+}
+#blok9
+{
+    position: absolute;
+    margin-top:-255px;
+    margin-left:342px;
+}
+#blok10
+{
+    position: absolute;
+    margin-top:-318px;
+    margin-left:449px;
+}
+#blok11
+{
+    position: absolute;
+    margin-top:-382px;
+    margin-left:-81px;
+}
+#blok12
+{
+    position: absolute;
+    margin-top:-380px;
+    margin-left:130px;
+}
+
+#blok13
+{
+    position: absolute;
+    margin-top:-507px;
+    margin-left:-81px;
+}
+
+#blok14
+{
+    position: absolute;
+    margin-top:-445px;
+    margin-left:24px;
+}
+#blok15
+{
+    position: absolute;
+    margin-top:-507px;
+    margin-left:130px;
+}
+
+#blok16
+{
+    position: absolute;
+    margin-top:-444px;
+    margin-left:236px;
+}
+#blok17
+{
+    position: absolute;
+    margin-top:-509px;
+    margin-left:342px;
+}
+#blok18
+{
+    position: absolute;
+    margin-top:-446px;
+    margin-left:449px;
+}
+#blok19
+{
+    position: absolute;
+    margin-top:-381px;
+    margin-left:342px;
+}
+#blok20
+{
+    position: absolute;
+    margin-top:-571px;
+    margin-left:24px;
+}
+#blok21
+{
+    position: absolute;
+    margin-top:-569px;
+    margin-left:236px;
+}
+
+#blok22
+{
+    position: absolute;
+    margin-top:-634px;
+    margin-left:130px;
+}
+#blok23
+{
+    position: absolute;
+    margin-top:-634px;
+    margin-left:342px;
+}
+#blok24
+{
+    position: absolute;
+    margin-top:-695px;
+    margin-left:236px;
+}
+#blok25
+{
+    position: absolute;
+    margin-top:-760px;
+    margin-left:130px;
+}
+#blok26
+{
+    position: absolute;
+    margin-top:-822px;
+    margin-left:236px;
+}
+#blok27
+{
+    position: absolute;
+    margin-top:-760px;
+    margin-left:342px;
+}
+
+#container>.overlay>img
+{
+	height:180px;
+    width: 150px;
+}
+
+.overlay img, .przeciwnicy 
+{
+	transition:all 0.5s ease-in-out;
+}
+
+.overlay:hover img, .przeciwnicy:hover 
+{
+	-webkit-transform: scale(1.069);
+	-ms-transform: scale(1.069);
+	transform: scale(1.069);
+}
+
+.postac1
+{
+	width:80%;
+	height:67%;
+	position:relative;
+}
+#hp
+{
+	float:left;
+	margin-right:-200px;
+	text-align:center;
+	font-size:50px;
+	font-family:curier new;
+}
+#hp img
+{
+	position:relative;
+	width:80%;
+	height:80%;
+	top:6px;
+}
